@@ -45,4 +45,4 @@ jobs:
             ${{ runner.os }}-
       - run: npm ci
       - name: Deploy to Layer0
-        run: npm run deploy -- --branch=$BRANCH_NAME --token=${{secrets.layer0_deploy_token}} ${{env.BRANCH_NAME == 'master' && '--environment=default' || '--environment=staging'}}
+        run: npm run layer0:deploy -- --branch=$BRANCH_NAME --token=${{secrets.layer0_deploy_token}} ${{env.BRANCH_NAME == 'master' && '--environment=default' || '--environment=staging'}}
