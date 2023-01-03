@@ -1,31 +1,27 @@
 {
   "scripts": {
-    "layer0:dev": "layer0 dev",
-    "layer0:build": "layer0 build",
-    "layer0:deploy": "layer0 deploy",
+    "edgio:dev": "edgio dev",
+    "edgio:build": "edgio build",
+    "edgio:deploy": "edgio deploy",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
   "name": "next-react-storyblok-boilerplate",
-  "version": "1.0.0",
-  "description": "Next.js Storyblok Boilerplate",
-  "main": "index.js",
-  "private": true,
   "dependencies": {
     "axios": "^0.21.1",
     "next": "10.2.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "storyblok-js-client": "^4.0.7",
-    "storyblok-react": "^0.1.2"
+    "storyblok-js-client": "latest",
+    "storyblok-react": "latest"
   },
   "devDependencies": {
-    "@layer0/cli": "^3.16.0",
-    "@layer0/core": "^3.16.0",
-    "@layer0/devtools": "^3.16.0",
-    "@layer0/next": "^3.16.0",
-    "@layer0/prefetch": "^3.16.0",
-    "@layer0/react": "^3.16.0"
+    "@edgio/cli": "^6.0.5",
+    "@edgio/core": "^6.0.5",
+    "@edgio/devtools": "^6.0.5",
+    "@edgio/next": "latest",
+    "@edgio/prefetch": "^6.0.5",
+    "@edgio/react": "^6.0.5"
   }
 }
